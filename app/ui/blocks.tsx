@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { interpolateTurbo } from "d3-scale-chromatic";
+import { interpolateRainbow } from "d3-scale-chromatic";
 
 export default function Blocks() {
   const [windowsWidth, setWindowsWidth] = useState(0);
@@ -18,8 +18,9 @@ export default function Blocks() {
   function interpolateColors(
     dataLength: number | undefined,
     colorScale: (arg0: any) => any,
-    colorRangeInfo: { colorStart: any; colorEnd: any; useEndAsStart?: any }
+    colorRangeInfo: any
   ) {
+    dataLength = dataLength || 10;
     dataLength = dataLength * 2;
     var { colorStart, colorEnd } = colorRangeInfo;
     var colorRange = colorEnd - colorStart;
@@ -31,11 +32,6 @@ export default function Blocks() {
       colorPoint = calculatePoint(i, intervalSize, colorRangeInfo);
       colorArray.push(colorScale(colorPoint));
     }
-
-    const firstThird = colorArray.slice(0, dataLength / 3);
-    const lastThird = colorArray.slice((dataLength / 3) * 2, dataLength);
-
-    colorArray = [...firstThird, ...lastThird];
     return colorArray;
   }
 
@@ -44,7 +40,7 @@ export default function Blocks() {
 
     const nbOfBlocks = Math.ceil(window.innerHeight / blockSize);
 
-    return [...Array(nbOfBlocks).keys()].map((_, index) => {
+    return Array.from(Array(nbOfBlocks).keys()).map((_, index) => {
       return (
         <div
           className="h-[5vw] w-[100%] "
@@ -63,8 +59,7 @@ export default function Blocks() {
     useEndAsStart: true,
   };
 
-  let COLORS = interpolateColors(30, interpolateTurbo, colorRangeInfo);
-  COLORS = [...COLORS, ...COLORS.reverse()];
+  let COLORS = interpolateColors(50, interpolateRainbow, colorRangeInfo);
 
   let colorIndex = -1;
   const colorize = (el: any) => {

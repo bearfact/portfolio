@@ -10,16 +10,15 @@ export default function Home() {
       <div className="text-center relative flex flex-col place-items-center">
         <Hero />
 
-        <div className="mt-8 text-center text-gray-300">
-          Helping small business achieve their technology goals. Open to
-          full-time opportunities.
+        <div className="mt-8 text-lg text-center text-gray-300">
+          Mentor | Architect | Full-Stack Engineer | Consultant
         </div>
       </div>
 
-      <div className="flex justify-between mb-32 text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:text-left">
+      <div className="flex flex-col sm:flex-row justify-between mb-32 text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:text-left">
         <a
           href="https://linkedin.com/in/joseph-crone"
-          className="z-10 group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          className="z-10 group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-600"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -36,7 +35,7 @@ export default function Home() {
 
         <a
           href="https://github.com/bearfact"
-          className="z-10 group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          className="z-10 group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-600"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -47,13 +46,13 @@ export default function Home() {
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            View some code and stuff I've been working on.
+            View some code and things I&#39;ve been working on.
           </p>
         </a>
 
         <Link
           href="/projects"
-          className="z-10 group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          className="z-10 group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-600"
         >
           <h2 className={`mb-3 text-2xl font-semibold`}>
             Projects{" "}
