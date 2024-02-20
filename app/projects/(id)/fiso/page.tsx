@@ -18,15 +18,15 @@ export default function Page() {
               <figure>
                 <img
                   className="w-full max-w-2xl mx-auto mb-6 rounded-lg sm:mb-8"
-                  src="https://media.licdn.com/dms/image/D562DAQGsyAa-VgTTGA/profile-treasury-image-shrink_800_800/0/1704051953990?e=1708369200&v=beta&t=KDszXDkz1AosV031hxJK6ks3K0BE9i79K0Pu3G25NUg"
-                  alt=""
+                  src="/fiso-dash.jpeg"
+                  alt="FISO Golf Dashboard"
                 />
               </figure>
               <figure>
                 <img
                   className="w-full max-w-2xl mx-auto mb-6 rounded-lg sm:mb-8"
-                  src="https://media.licdn.com/dms/image/D562DAQEBDJgN0x8zqg/profile-treasury-image-shrink_800_800/0/1704051912256?e=1708369200&v=beta&t=J01vORootQ0Sab4Enh4S5gYHcZedTqJCbprzPvNIso8"
-                  alt=""
+                  src="/fiso-login.jpeg"
+                  alt="FISO Golf Login"
                 />
               </figure>
             </div>
@@ -55,8 +55,8 @@ export default function Page() {
             <figure className="my-4 border-b border-white">
               <img
                 className="w-full max-w-2xl mx-auto mb-6 rounded-lg sm:mb-8"
-                src="https://media.licdn.com/dms/image/D562DAQGsyAa-VgTTGA/profile-treasury-image-shrink_800_800/0/1704051953990?e=1708369200&v=beta&t=KDszXDkz1AosV031hxJK6ks3K0BE9i79K0Pu3G25NUg"
-                alt=""
+                src="/fiso-dash.jpeg"
+                alt="FISO Golf Dashboard"
               />
               <figcaption>FISO Golf Dashboard</figcaption>
             </figure>
