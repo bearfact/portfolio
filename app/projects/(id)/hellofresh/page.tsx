@@ -27,9 +27,7 @@ export default function Page() {
                 />
               </figure>
             </div>
-            <h2 className="text-2xl font-bold mb-4">
-              In the beginning there was - opportunity...
-            </h2>
+            <h2 className="text-2xl font-bold mb-4">A big hill to climb...</h2>
 
             <p className="lead mb-4">
               I joined the HelloFresh team in 2018, just after the acquisition
@@ -113,9 +111,7 @@ export default function Page() {
               process. These changes improved our AOV and increased our active
               user base by 5x.
             </p>
-            <h2 className="text-2xl font-bold mb-4">
-              Its the final countdown...
-            </h2>
+            <h2 className="text-2xl font-bold mb-4">A global perspective...</h2>
             <p className="mb-8">
               In the last year of my time at HelloFresh I was able to focus on
               more global architecture problems. Partnering with engineers from
