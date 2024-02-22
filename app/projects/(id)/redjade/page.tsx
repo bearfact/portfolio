@@ -110,7 +110,7 @@ export default function Page() {
             </p>
             <h2 className="text-2xl font-bold mb-4">Technologies</h2>
             <div className="flex flex-wrap justify-start gap-x-4">
-              <span className="text-xl font-bold">Angular</span>We
+              <span className="text-xl font-bold">Angular</span>
               <span>Javascript</span>
               <span className="text-xl font-bold">Ruby on Rails</span>
               <span>Postgres</span>
