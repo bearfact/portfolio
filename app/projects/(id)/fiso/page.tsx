@@ -39,7 +39,7 @@ export default function Page() {
             </p>
             <p className="mb-6">
               Born out of the need for a better solution to run golf tournaments
-              for my own personal use. The applicaiton is designed to support a
+              for my own personal use. The application is designed to support a
               variety of games and scoring options, including best ball,
               scramble, stableford, half-and-half, stroke-play and more. It also
               supports a variety of team formats, including 1v1, 2v2, 3v3, 4v4,
@@ -50,7 +50,7 @@ export default function Page() {
               assign strokes to players based on their handicap and the course
               rating and slope. With linear or logarithmic scoring options, and
               the ability to adjust the value of each game, the application is
-              flexible enough to support any type of golf event.
+              flexible enough to support any type of team golf event.
             </p>
             <figure className="my-4 border-b border-white">
               <img
