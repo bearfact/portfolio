@@ -21,14 +21,14 @@ export default function Page() {
                     key="dashboard"
                     width={400}
                     height={300}
-                    src="https://media.licdn.com/dms/image/D562DAQGsyAa-VgTTGA/profile-treasury-image-shrink_800_800/0/1704051953990?e=1708369200&v=beta&t=KDszXDkz1AosV031hxJK6ks3K0BE9i79K0Pu3G25NUg"
+                    src="/fiso-dash.jpeg"
                     alt="Fiso Golf Dashboard"
                   />,
                   <Image
                     key="login"
                     width={400}
                     height={300}
-                    src="https://media.licdn.com/dms/image/D562DAQEBDJgN0x8zqg/profile-treasury-image-shrink_800_800/0/1704051912256?e=1708369200&v=beta&t=J01vORootQ0Sab4Enh4S5gYHcZedTqJCbprzPvNIso8"
+                    src="/fiso-login.jpeg"
                     alt="Fiso Golf Login"
                   />,
                 ]}
