@@ -1,7 +1,8 @@
 import BackToButton from "@/app/ui/back-tobutton";
+import { Fragment } from "react";
 export default function Page() {
   return (
-    <div className="p-4">
+    <Fragment>
       <BackToButton href="/projects" title="Projects" />
       <main className="max-w-2xl mx-auto text-lg">
         <div className="flex flex-col my-16">
@@ -124,6 +125,6 @@ export default function Page() {
           </article>
         </div>
       </main>
-    </div>
+    </Fragment>
   );
 }
