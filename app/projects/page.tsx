@@ -38,7 +38,7 @@ export default function Page() {
                 date="Jan, 2022"
                 href="https://shinesty.com"
                 title="Shinesty.com"
-                desc="Keeping you outfitted for all of life&#39;s social moments, welcome to the home of the largest collection of outrageous party clothing and themed party apparel on the internet. Your life just got way better.  Built with NextJS, Apollo/GraphQL, and TailwindCSS custom components."
+                desc="Complete Shopify frontend rebuild from Liquid templates to React/NextJS.  Built with NextJS, Apollo/GraphQL, and TailwindCSS custom components."
               />
             </div>
             <div className="">
