@@ -22,62 +22,63 @@ export default function Page() {
               </figure>
             </div>
             <h2 className="text-2xl font-bold mb-4">
-              Blind confidence isn&apos;t always a bad thing...
+              Unexpected opportunities...
             </h2>
 
             <p className="lead mb-8">
               In late 2013 I met two individuals who owned a sensory testing
-              company with a few locations in the U.S. They had a vision for a
-              software platform that would allow them to manage their sensory
-              tests and data more efficiently and effectively. They had a few
-              ideas and a few requirements, but they didn&apos;t have a product.
-              They had a lot of confidence in their vision and I had a lot of
-              confidence in myself. I had never built a SaaS platform from
-              scratch before, but I had built a lot of software and I had a lot
-              of confidence in my ability to learn and adapt. Not understanding
-              the scale of what I was about to undertake was likely a blessing.
+              company with a few physical testing locations in the U.S. They had
+              a vision for a software platform that would allow them to manage
+              their sensory tests and data more effectively. They believed their
+              current business model could be replaced with a software solution
+              that their clients could operate themselves. This was an
+              opportunity to build something brand new, from the ground up, with
+              the freedom to make all the technical decisions. I didn&apos;t
+              need any more convincing.
             </p>
             <h2 className="text-2xl font-bold mb-4">
               Start small and get to market...
             </h2>
             <p className="mb-8">
               Our first product was an analysis tool that took an Excel file of
-              data, computed common statistical analysis as well as QDA and PCA,
-              and then generated a report. It also provided a beautiful UI to
-              explore the analysis and run variations by excluding subjects.
-              This was a tool that was used by the sensory professionals to
-              analyze their data and generate reports for their clients. It was
-              a small product, but it was a start. We were able to get it to
-              market and start generating revenue. This revenue proved there was
-              a market for our software and allowed us to start building the
-              platform that we had envisioned.
+              data, computed common statistical analysis, as well as QDA and
+              PCA, and then generated a PDF export. It also provided a beautiful
+              UI to explore the analysis and run variations by excluding
+              subjects or products. This tool was used by the sensory
+              professionals to analyze their data and generate reports for their
+              clients. It was a product with limited capabilities but we were
+              able to get it to customers and begin generating revenue. This
+              revenue proved there was a market for our software and allowed us
+              to start building the platform that we had envisioned.
             </p>
             <h2 className="text-2xl font-bold mb-4">
               Get feedback you trust and iterate...
             </h2>
             <p className="mb-8">
-              We were able to get our product into the hands of some of the most
-              prominent companies in the food and beverage industry. We were
-              able to get feedback from some of the most experienced sensory
-              professionals in the world. We were able to iterate and improve
-              our product based on this feedback. The next product couldn&apos;t
-              be built small, there were too many moving parts and dependence on
-              a holistic solution, but that is what we&apos;re here for.
+              Fortunately for us, we were able to get our product into the hands
+              of some of the most prominent companies in the food and beverage
+              industry. This allowed us to get feedback from very experienced
+              and knowledgeable sensory professionals. With this feedback, we
+              were able to iterate on our analysis tool and form a plan for
+              future product offerings.
             </p>
             <h2 className="text-2xl font-bold mb-4">
-              The vision becomes reality...
+              Jumping all the way in...
             </h2>
             <p className="mb-8">
-              The next product iteration included a survey authoring tool. This
-              supported multiple languages, custom logic and branching, and a
-              variety of question types. We built a survey collection tool that
-              supported in-person, online, and mobile data collection. We built
-              a distribution matrix tool to help manage the distribution of test
-              samples to individuals and remove adjacency bias. We built a tool
-              for labs and kitchens to manage the delivery of samples and the
-              collection of data with precisely timed prompting to ensure
-              accurate results. Finally, we built project management tools to
-              help manage the entire process from start to finish.
+              With the analysis tool proving to be a success, we began to tackle
+              the data collection side of the sensory testing business. The next
+              product included a survey authoring tool. This supported multiple
+              languages, custom logic and branching, and a variety of question
+              types. This application was paired with a survey collection tool
+              that supported in-person, online, and mobile data collection. A
+              separate application was built for labs and kitchens to manage the
+              delivery of samples and the collection of data with precisely
+              timed prompting to ensure accurate results. Lastly, we built a
+              project management tool where customers would define their tests,
+              products, subjects, and surveys. This tool would guide the user
+              through the process of setting up a project and then provide a
+              dashboard to monitor the progress and results of the test.
             </p>
             <h2 className="text-2xl font-bold mb-4">
               A suprise winner and interested buyers...
