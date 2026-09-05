@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import { interpolateRainbow } from "d3-scale-chromatic";
 
+const BLOCK_SIZE_VW = 2; // block width/height as a percentage of viewport width
+const NUM_COLUMNS = Math.round(100 / BLOCK_SIZE_VW);
+
 export default function Blocks() {
   const [windowsWidth, setWindowsWidth] = useState(0);
 
@@ -36,14 +39,15 @@ export default function Blocks() {
   }
 
   const getBlocks = () => {
-    const blockSize = windowsWidth * 0.05;
+    const blockSize = windowsWidth * (BLOCK_SIZE_VW / 100);
 
     const nbOfBlocks = Math.ceil(window.innerHeight / blockSize);
 
     return Array.from(Array(nbOfBlocks).keys()).map((_, index) => {
       return (
         <div
-          className="h-[5vw] w-[100%] "
+          className="w-[100%]"
+          style={{ height: `${BLOCK_SIZE_VW}vw` }}
           onMouseEnter={(e) => {
             colorize(e.target);
           }}
@@ -77,15 +81,20 @@ export default function Blocks() {
   };
 
   useEffect(() => {
+    // window is unavailable during SSR, so the real width is read after mount.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setWindowsWidth(window.innerWidth);
   }, []);
 
   return (
     <div className="flex h-[100%] w-[100%] overflow-hidden fixed top-0 z-0">
       {windowsWidth > 0 &&
-        Array.from(Array(20).keys()).map((_, index) => {
+        Array.from(Array(NUM_COLUMNS).keys()).map((_, index) => {
           return (
-            <div key={"b_" + index} className="w-[5vw]">
+            <div
+              key={"b_" + index}
+              style={{ width: `${BLOCK_SIZE_VW}vw` }}
+            >
               {getBlocks()}
             </div>
           );
