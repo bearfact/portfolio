@@ -1,42 +1,11 @@
 import { useState, useEffect } from "react";
-import { interpolateRainbow } from "d3-scale-chromatic";
+import { RAINBOW_COLORS } from "./colors";
 
 const BLOCK_SIZE_VW = 2; // block width/height as a percentage of viewport width
 const NUM_COLUMNS = Math.round(100 / BLOCK_SIZE_VW);
 
 export default function Blocks() {
   const [windowsWidth, setWindowsWidth] = useState(0);
-
-  function calculatePoint(
-    i: number,
-    intervalSize: number,
-    colorRangeInfo: { colorStart: any; colorEnd: any; useEndAsStart: any }
-  ) {
-    var { colorStart, colorEnd, useEndAsStart } = colorRangeInfo;
-    return useEndAsStart
-      ? colorEnd - i * intervalSize
-      : colorStart + i * intervalSize;
-  }
-
-  function interpolateColors(
-    dataLength: number | undefined,
-    colorScale: (arg0: any) => any,
-    colorRangeInfo: any
-  ) {
-    dataLength = dataLength || 10;
-    dataLength = dataLength * 2;
-    var { colorStart, colorEnd } = colorRangeInfo;
-    var colorRange = colorEnd - colorStart;
-    var intervalSize = colorRange / dataLength;
-    var i, colorPoint;
-    var colorArray = [];
-
-    for (i = 0; i < dataLength; i++) {
-      colorPoint = calculatePoint(i, intervalSize, colorRangeInfo);
-      colorArray.push(colorScale(colorPoint));
-    }
-    return colorArray;
-  }
 
   const getBlocks = () => {
     const blockSize = windowsWidth * (BLOCK_SIZE_VW / 100);
@@ -57,23 +26,15 @@ export default function Blocks() {
     });
   };
 
-  const colorRangeInfo = {
-    colorStart: 0,
-    colorEnd: 1,
-    useEndAsStart: true,
-  };
-
-  let COLORS = interpolateColors(50, interpolateRainbow, colorRangeInfo);
-
   let colorIndex = -1;
   const colorize = (el: any) => {
     colorIndex++;
-    if (colorIndex >= COLORS.length) {
+    if (colorIndex >= RAINBOW_COLORS.length) {
       colorIndex = 0;
     }
 
-    el.style.backgroundColor = COLORS[colorIndex];
-    window.localStorage.setItem("color", COLORS[colorIndex]);
+    el.style.backgroundColor = RAINBOW_COLORS[colorIndex];
+    window.localStorage.setItem("color", RAINBOW_COLORS[colorIndex]);
 
     setTimeout(() => {
       el.style.backgroundColor = "transparent";

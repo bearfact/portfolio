@@ -2,10 +2,12 @@
 import Link from "next/link";
 import Blocks from "./ui/blocks";
 import Hero from "./ui/hero";
+import useIsTouchDevice from "./ui/use-is-touch-device";
 export default function Home() {
+  const isTouch = useIsTouchDevice();
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Blocks />
+      {!isTouch && <Blocks />}
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex"></div>
       <div className="text-center relative flex flex-col place-items-center">
         <Hero />
