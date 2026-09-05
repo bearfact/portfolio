@@ -23,7 +23,7 @@ export default function Hero() {
     const interval = setInterval(() => {
       index = (index + 1) % RAINBOW_COLORS.length;
       setColor(RAINBOW_COLORS[index]);
-    }, 5000);
+    }, 500);
 
     return () => clearInterval(interval);
   }, [isTouch]);
